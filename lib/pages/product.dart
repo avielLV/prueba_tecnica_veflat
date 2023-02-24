@@ -96,8 +96,8 @@ class ProductPage extends StatelessWidget {
           bottom: 0,
           child: Container(
             padding: const EdgeInsets.only(top: 30, left: 30),
-            width: size.width * 0.8,
-            height: 260,
+            width: size.width * 0.85,
+            height: 300,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
@@ -176,14 +176,14 @@ class ProductPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
+                      padding: const EdgeInsets.only(bottom: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             '30% off',
                             style: TextStyle(
-                                fontSize: 12,
+                                fontSize: 16,
                                 color: Colors.blue[900],
                                 fontWeight: FontWeight.bold),
                           ),
@@ -193,15 +193,15 @@ class ProductPage extends StatelessWidget {
                               Text(
                                 '\$58',
                                 style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: 18,
                                     color: Colors.grey,
                                     fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(width: 4),
+                              SizedBox(width: 10),
                               Text(
                                 '\$55',
                                 style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 24,
                                     color: Colors.green,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -220,12 +220,15 @@ class ProductPage extends StatelessWidget {
                             color: Colors.black,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(40))),
-                        width: 120,
-                        height: 50,
+                        width: 150,
+                        height: 60,
                         child: const Center(
                           child: Text(
                             'Add to Bag',
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                            ),
                           ),
                         ),
                       ),
